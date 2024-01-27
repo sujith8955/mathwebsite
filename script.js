@@ -1,9 +1,8 @@
-function addNumbers() {
-            
+function addition() {
+
     var num1 = parseFloat(document.getElementById('num1').value);
     var num2 = parseFloat(document.getElementById('num2').value);
 
-    
     if (isNaN(num1) || isNaN(num2)) {
         alert("Please enter valid numbers");
         return;
@@ -14,18 +13,17 @@ function addNumbers() {
     document.getElementById('result').innerHTML = "Result: " + sum;
 }
 
-function multiplyNumbers() {
-            
+function multiplication() {
+
     var num1 = parseFloat(document.getElementById('num1').value);
     var num2 = parseFloat(document.getElementById('num2').value);
 
-    
     if (isNaN(num1) || isNaN(num2)) {
-        alert("Please enter valid numbers");
+        alert("Enter a valid numbers");
         return;
     }
 
     var product = num1 * num2;
-        
+
     document.getElementById('result').innerHTML = "Result: " + product;
 }
